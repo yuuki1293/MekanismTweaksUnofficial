@@ -8,9 +8,9 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
-@Mixin(MekanismUtils.class)
+@Mixin(value = MekanismUtils.class, remap = false)
 public abstract class MekanismUtilsMixin {
-    @Inject(method = "fractionUpgrades", at = @At(value = "RETURN", ordinal = 0), cancellable = true, remap = false)
+    @Inject(method = "fractionUpgrades", at = @At(value = "RETURN", ordinal = 0), cancellable = true)
     private static void fractionUpgrades(IUpgradeTile tile, Upgrade type, CallbackInfoReturnable<Double> info) {
         switch (type) {
             case SPEED -> info.setReturnValue(tile.getComponent().getUpgrades(type) / 8.0);

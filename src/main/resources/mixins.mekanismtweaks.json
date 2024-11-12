@@ -6,7 +6,8 @@
   "refmap": "mixins.mekanismtweaks.refmap.json",
   "mixins": [
     "MekanismUtilsMixin",
-    "UpgradeMixin"
+    "UpgradeMixin",
+    "UpgradeUtilsMixin"
   ],
   "injectors": {
     "defaultRequire": 1
