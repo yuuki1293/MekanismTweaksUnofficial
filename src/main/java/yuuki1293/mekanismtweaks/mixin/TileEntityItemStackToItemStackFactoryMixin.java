@@ -29,7 +29,6 @@ public abstract class TileEntityItemStackToItemStackFactoryMixin extends TileEnt
         super(blockProvider, pos, state, errorTypes, globalErrorTypes);
     }
 
-
     @Inject(method = "createNewCachedRecipe(Lmekanism/api/recipes/ItemStackToItemStackRecipe;I)Lmekanism/api/recipes/cache/CachedRecipe;", at = @At(value = "TAIL"))
     private void createNewCachedRecipe(ItemStackToItemStackRecipe recipe, int flags, CallbackInfoReturnable<CachedRecipe<?>> cir) {
         cir.getReturnValue().setBaselineMaxOperations(() -> mekanismtweaks$baselineMaxOperations);
