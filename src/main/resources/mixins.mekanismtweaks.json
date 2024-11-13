@@ -7,6 +7,7 @@
   "mixins": [
     "MekanismUtilsMixin",
     "TileEntityItemStackToItemStackFactoryMixin",
+    "TileEntityAdvancedElectricMachineMixin",
     "UpgradeMixin",
     "UpgradeUtilsMixin"
   ],
