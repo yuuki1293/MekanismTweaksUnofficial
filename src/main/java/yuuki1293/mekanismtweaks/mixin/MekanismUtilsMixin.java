@@ -20,8 +20,9 @@ public abstract class MekanismUtilsMixin {
                     var speedCount = tile.getComponent().getUpgrades(Upgrade.SPEED);
                     var available = Math.min(energyCount, Math.max(8, speedCount));
                     info.setReturnValue(available / 8.0);
+                } else {
+                    info.setReturnValue(energyCount / 8.0);
                 }
-                info.setReturnValue(energyCount / 8.0);
             }
             default -> {
             }
