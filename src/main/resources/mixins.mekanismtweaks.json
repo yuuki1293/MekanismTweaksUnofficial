@@ -22,6 +22,7 @@
     "TileEntityPigmentExtractorMixin",
     "TileEntityPrecisionSawmillMixin",
     "TileEntityPressurizedReactionChamberMixin",
+    "TileEntitySawingFactoryMixin",
     "UpgradeMixin",
     "UpgradeUtilsMixin"
   ],
