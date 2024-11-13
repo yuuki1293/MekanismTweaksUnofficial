@@ -19,7 +19,6 @@ import yuuki1293.mekanismtweaks.Utils;
 
 import java.util.List;
 import java.util.Set;
-import java.util.function.IntConsumer;
 
 // Sawing
 @Mixin(value = TileEntitySawingFactory.class, remap = false)
