@@ -17,6 +17,7 @@
     "TileEntityItemStackToItemStackFactoryMixin",
     "TileEntityMetallurgicInfuserFactoryMixin",
     "TileEntityMetallurgicInfuserMixin",
+    "TileEntityNutritionalLiquifierMixin",
     "UpgradeMixin",
     "UpgradeUtilsMixin"
   ],
