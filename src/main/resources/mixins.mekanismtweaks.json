@@ -19,6 +19,7 @@
     "TileEntityMetallurgicInfuserMixin",
     "TileEntityNutritionalLiquifierMixin",
     "TileEntityPaintingMachineMixin",
+    "TileEntityPigmentExtractorMixin",
     "UpgradeMixin",
     "UpgradeUtilsMixin"
   ],
