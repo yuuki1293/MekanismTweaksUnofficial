@@ -11,6 +11,7 @@
     "TileEntityChemicalDissolutionChamberMixin",
     "TileEntityChemicalOxidizerMixin",
     "TileEntityCombinerMixin",
+    "TileEntityCombiningFactoryMixin",
     "TileEntityItemStackToItemStackFactoryMixin",
     "UpgradeMixin",
     "UpgradeUtilsMixin"
