@@ -15,6 +15,7 @@
     "TileEntityElectricMachineMixin",
     "TileEntityItemStackGasToItemStackFactoryMixin",
     "TileEntityItemStackToItemStackFactoryMixin",
+    "TileEntityMetallurgicInfuserMixin",
     "UpgradeMixin",
     "UpgradeUtilsMixin"
   ],
