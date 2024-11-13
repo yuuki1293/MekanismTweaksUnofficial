@@ -19,6 +19,7 @@ import yuuki1293.mekanismtweaks.Utils;
 
 import java.util.List;
 import java.util.Set;
+import java.util.function.IntConsumer;
 
 // Sawing
 @Mixin(value = TileEntitySawingFactory.class, remap = false)
@@ -38,6 +39,6 @@ public abstract class TileEntitySawingFactoryMixin extends TileEntityFactory<Mek
     @Override
     public void recalculateUpgrades(Upgrade upgrade) {
         super.recalculateUpgrades(upgrade);
-        mekanismtweaks$baselineMaxOperations = Utils.setBaselineMaxOperation(BASE_TICKS_REQUIRED, this, upgrade);
+        Utils.setBaselineMaxOperation(BASE_TICKS_REQUIRED, this, upgrade, x -> mekanismtweaks$baselineMaxOperations = x);
     }
 }

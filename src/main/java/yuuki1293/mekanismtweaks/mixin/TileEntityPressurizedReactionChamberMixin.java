@@ -21,7 +21,9 @@ import yuuki1293.mekanismtweaks.Utils;
 // Pressurized Reaction Chamber
 @Mixin(value = TileEntityPressurizedReactionChamber.class, remap = false)
 public abstract class TileEntityPressurizedReactionChamberMixin extends TileEntityMekanism {
-    @Shadow @Final private static int BASE_DURATION;
+    @Shadow
+    @Final
+    private static int BASE_DURATION;
     @Unique
     private int mekanismtweaks$baselineMaxOperations = 1;
 
@@ -37,6 +39,6 @@ public abstract class TileEntityPressurizedReactionChamberMixin extends TileEnti
     @Override
     public void recalculateUpgrades(Upgrade upgrade) {
         super.recalculateUpgrades(upgrade);
-        mekanismtweaks$baselineMaxOperations = Utils.setBaselineMaxOperation(BASE_DURATION, this, upgrade);
+        Utils.setBaselineMaxOperation(BASE_DURATION, this, upgrade, x -> mekanismtweaks$baselineMaxOperations = x);
     }
 }

@@ -39,6 +39,6 @@ public abstract class TileEntityAdvancedElectricMachineMixin extends TileEntityM
     @Override
     public void recalculateUpgrades(Upgrade upgrade) {
         super.recalculateUpgrades(upgrade);
-        mekanismtweaks$baselineMaxOperations = Utils.setBaselineMaxOperation(BASE_TICKS_REQUIRED, this, upgrade);
+        Utils.setBaselineMaxOperation(BASE_TICKS_REQUIRED, this, upgrade, x -> mekanismtweaks$baselineMaxOperations = x);
     }
 }

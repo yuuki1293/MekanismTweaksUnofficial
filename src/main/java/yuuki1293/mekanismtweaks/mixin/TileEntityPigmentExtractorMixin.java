@@ -34,6 +34,6 @@ public abstract class TileEntityPigmentExtractorMixin extends TileEntityMekanism
     @Override
     public void recalculateUpgrades(Upgrade upgrade) {
         super.recalculateUpgrades(upgrade);
-        mekanismtweaks$baselineMaxOperations = Utils.setBaselineMaxOperation(100, this, upgrade);
+        Utils.setBaselineMaxOperation(100, this, upgrade, x -> mekanismtweaks$baselineMaxOperations = x);
     }
 }

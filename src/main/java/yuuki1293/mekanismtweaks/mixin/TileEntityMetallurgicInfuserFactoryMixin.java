@@ -34,6 +34,6 @@ public abstract class TileEntityMetallurgicInfuserFactoryMixin extends TileEntit
     @Override
     public void recalculateUpgrades(Upgrade upgrade) {
         super.recalculateUpgrades(upgrade);
-        mekanismtweaks$baselineMaxOperations = Utils.setBaselineMaxOperation(200, this, upgrade);
+        Utils.setBaselineMaxOperation(200, this, upgrade, x -> mekanismtweaks$baselineMaxOperations = x);
     }
 }
