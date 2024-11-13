@@ -18,6 +18,7 @@
     "TileEntityMetallurgicInfuserFactoryMixin",
     "TileEntityMetallurgicInfuserMixin",
     "TileEntityNutritionalLiquifierMixin",
+    "TileEntityPaintingMachineMixin",
     "UpgradeMixin",
     "UpgradeUtilsMixin"
   ],
