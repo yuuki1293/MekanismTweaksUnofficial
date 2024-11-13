@@ -9,6 +9,7 @@
     "TileEntityAdvancedElectricMachineMixin",
     "TileEntityChemicalCrystallizerMixin",
     "TileEntityChemicalDissolutionChamberMixin",
+    "TileEntityChemicalOxidizerMixin",
     "TileEntityItemStackToItemStackFactoryMixin",
     "UpgradeMixin",
     "UpgradeUtilsMixin"
