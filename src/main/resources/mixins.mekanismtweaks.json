@@ -13,6 +13,7 @@
     "TileEntityCombinerMixin",
     "TileEntityCombiningFactoryMixin",
     "TileEntityElectricMachineMixin",
+    "TileEntityItemStackGasToItemStackFactoryMixin",
     "TileEntityItemStackToItemStackFactoryMixin",
     "UpgradeMixin",
     "UpgradeUtilsMixin"
