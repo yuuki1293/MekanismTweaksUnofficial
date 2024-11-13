@@ -6,8 +6,9 @@
   "refmap": "mixins.mekanismtweaks.refmap.json",
   "mixins": [
     "MekanismUtilsMixin",
-    "TileEntityItemStackToItemStackFactoryMixin",
     "TileEntityAdvancedElectricMachineMixin",
+    "TileEntityChemicalCrystallizerMixin",
+    "TileEntityItemStackToItemStackFactoryMixin",
     "UpgradeMixin",
     "UpgradeUtilsMixin"
   ],
