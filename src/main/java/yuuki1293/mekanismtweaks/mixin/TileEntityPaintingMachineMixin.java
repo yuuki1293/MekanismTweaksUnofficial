@@ -2,11 +2,9 @@ package yuuki1293.mekanismtweaks.mixin;
 
 import mekanism.api.Upgrade;
 import mekanism.api.providers.IBlockProvider;
-import mekanism.api.recipes.ItemStackToFluidRecipe;
 import mekanism.api.recipes.PaintingRecipe;
 import mekanism.api.recipes.cache.CachedRecipe;
 import mekanism.common.tile.base.TileEntityMekanism;
-import mekanism.common.tile.machine.TileEntityNutritionalLiquifier;
 import mekanism.common.tile.machine.TileEntityPaintingMachine;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.block.state.BlockState;
