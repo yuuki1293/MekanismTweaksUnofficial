@@ -21,6 +21,7 @@
     "TileEntityPaintingMachineMixin",
     "TileEntityPigmentExtractorMixin",
     "TileEntityPrecisionSawmillMixin",
+    "TileEntityPressurizedReactionChamberMixin",
     "UpgradeMixin",
     "UpgradeUtilsMixin"
   ],
