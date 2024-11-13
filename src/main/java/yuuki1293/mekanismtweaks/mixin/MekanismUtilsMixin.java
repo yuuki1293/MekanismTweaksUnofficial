@@ -1,6 +1,8 @@
 package yuuki1293.mekanismtweaks.mixin;
 
 import mekanism.api.Upgrade;
+import mekanism.api.math.FloatingLong;
+import mekanism.common.config.MekanismConfig;
 import mekanism.common.tile.interfaces.IUpgradeTile;
 import mekanism.common.util.MekanismUtils;
 import org.spongepowered.asm.mixin.Mixin;
@@ -27,5 +29,13 @@ public abstract class MekanismUtilsMixin {
             default -> {
             }
         }
+    }
+
+    /**
+     * Energy capacity is not limited by speed upgrades.
+     */
+    @Inject(method = "getMaxEnergy(Lmekanism/common/tile/interfaces/IUpgradeTile;Lmekanism/api/math/FloatingLong;)Lmekanism/api/math/FloatingLong;", at = @At(value = "RETURN", ordinal = 0), cancellable = true)
+    private static void getMaxEnergy(IUpgradeTile tile, FloatingLong def, CallbackInfoReturnable<FloatingLong> cir) {
+        cir.setReturnValue(def.multiply(Math.pow(MekanismConfig.general.maxUpgradeMultiplier.get(), tile.getComponent().getUpgrades(Upgrade.ENERGY) / 8.0)));
     }
 }
