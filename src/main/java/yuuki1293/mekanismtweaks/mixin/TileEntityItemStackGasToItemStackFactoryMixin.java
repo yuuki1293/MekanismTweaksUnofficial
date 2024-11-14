@@ -14,6 +14,7 @@ import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
+import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 import yuuki1293.mekanismtweaks.Utils;
 
@@ -35,8 +36,8 @@ public abstract class TileEntityItemStackGasToItemStackFactoryMixin extends Tile
         cir.getReturnValue().setBaselineMaxOperations(() -> mekanismtweaks$baselineMaxOperations);
     }
 
-    @Override
-    public void recalculateUpgrades(Upgrade upgrade) {
+    @Inject(method = "recalculateUpgrades", at = @At(value = "HEAD"))
+    public void recalculateUpgrades(Upgrade upgrade, CallbackInfo ci) {
         super.recalculateUpgrades(upgrade);
         Utils.setBaselineMaxOperation(BASE_TICKS_REQUIRED, this, upgrade, x -> mekanismtweaks$baselineMaxOperations = x);
     }
