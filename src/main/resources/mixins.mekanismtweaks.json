@@ -12,6 +12,7 @@
     "TileEntityChemicalOxidizerMixin",
     "TileEntityCombinerMixin",
     "TileEntityCombiningFactoryMixin",
+    "TileEntityDigitalMinerMixin",
     "TileEntityElectricMachineMixin",
     "TileEntityItemStackGasToItemStackFactoryMixin",
     "TileEntityItemStackToItemStackFactoryMixin",
