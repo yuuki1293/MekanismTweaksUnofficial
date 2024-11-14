@@ -15,6 +15,7 @@
     "TileEntityDigitalMinerMixin",
     "TileEntityElectricMachineMixin",
     "TileEntityFluidicPlenisherMixin",
+    "TileEntityFormulaicAssemblicatorMixin",
     "TileEntityItemStackGasToItemStackFactoryMixin",
     "TileEntityItemStackToItemStackFactoryMixin",
     "TileEntityMetallurgicInfuserFactoryMixin",
