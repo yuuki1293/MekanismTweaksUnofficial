@@ -13,7 +13,7 @@ public class Utils {
         if (upgrade == Upgrade.SPEED) {
             var tickRequired = baseTick * Math.pow(MekanismConfig.general.maxUpgradeMultiplier.get(), -fractionUpgrades(tile, Upgrade.SPEED));
             if (tickRequired < 1.0) {
-                setter.accept((int) Math.min(1.0 / tickRequired, 64));
+                setter.accept((int) Math.min(1.0 / tickRequired, Config.maxMultiWorks));
             } else {
                 setter.accept(1);
             }

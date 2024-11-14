@@ -19,14 +19,20 @@ public class Config {
         .comment("Energy Upgrade max stack size")
         .defineInRange("energyUpgradeStackSize", 64, 8, Integer.MAX_VALUE);
 
+    private static final ForgeConfigSpec.IntValue MAX_MULTI_WORKS = BUILDER
+        .comment("Maximum value of multiplier")
+        .defineInRange("maxMultiWorks", 64, 1, Integer.MAX_VALUE);
+
     static final ForgeConfigSpec SPEC = BUILDER.build();
 
     public static int speedStackSize;
     public static int energyStackSize;
+    public static int maxMultiWorks;
 
     @SubscribeEvent
     static void onLoad(final ModConfigEvent event) {
         speedStackSize = SPEED_UPGRADE_STACK_SIZE.get();
         energyStackSize = ENERGY_UPGRADE_STACK_SIZE.get();
+        maxMultiWorks = MAX_MULTI_WORKS.get();
     }
 }
