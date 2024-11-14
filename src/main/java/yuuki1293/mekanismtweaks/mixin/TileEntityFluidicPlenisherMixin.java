@@ -4,7 +4,6 @@ import mekanism.api.Upgrade;
 import mekanism.api.providers.IBlockProvider;
 import mekanism.common.config.MekanismConfig;
 import mekanism.common.tile.base.TileEntityMekanism;
-import mekanism.common.tile.machine.TileEntityDigitalMiner;
 import mekanism.common.tile.machine.TileEntityFluidicPlenisher;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.block.state.BlockState;
