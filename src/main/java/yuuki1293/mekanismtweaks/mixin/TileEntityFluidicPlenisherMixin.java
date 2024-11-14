@@ -1,7 +1,6 @@
 package yuuki1293.mekanismtweaks.mixin;
 
 import mekanism.api.Upgrade;
-import mekanism.common.config.MekanismConfig;
 import mekanism.common.tile.interfaces.IUpgradeTile;
 import mekanism.common.tile.machine.TileEntityFluidicPlenisher;
 import org.spongepowered.asm.mixin.Final;
