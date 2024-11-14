@@ -1,12 +1,8 @@
 package yuuki1293.mekanismtweaks.mixin;
 
 import mekanism.api.Upgrade;
-import mekanism.api.providers.IBlockProvider;
-import mekanism.common.tile.base.TileEntityMekanism;
 import mekanism.common.tile.interfaces.IUpgradeTile;
 import mekanism.common.tile.machine.TileEntityFormulaicAssemblicator;
-import net.minecraft.core.BlockPos;
-import net.minecraft.world.level.block.state.BlockState;
 import org.spongepowered.asm.mixin.Final;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
