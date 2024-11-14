@@ -29,8 +29,8 @@ public class RecipeCacheLookupMonitorMixin {
         var ret = cir.getReturnValue();
         if (ret != null) {
             var clazz = this.handler.getClass();
-            if ((clazz.isAssignableFrom(TileEntityProgressMachine.class)
-                || clazz.isAssignableFrom(TileEntityFactory.class))
+            if ((TileEntityProgressMachine.class.isAssignableFrom(clazz)
+                || TileEntityFactory.class.isAssignableFrom(clazz))
                 && (Boolean) clazz.getMethod("supportsUpgrade", Upgrade.class).invoke(this.handler, Upgrade.SPEED)) {
                 ret.setBaselineMaxOperations(() -> ((IProcess) this.handler).mekanismtweaks$getBaselineMaxOperations());
             }

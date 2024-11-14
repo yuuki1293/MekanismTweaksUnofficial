@@ -27,12 +27,12 @@ public abstract class TileEntityMekanismMixin implements IUpgradeTile, IProcess 
     private void recalculateUpgrades(Upgrade upgrade, CallbackInfo ci) throws NoSuchFieldException, IllegalAccessException {
         var clazz = this.getClass();
         int baseTick = 200;
-        if (clazz.isAssignableFrom(TileEntityProgressMachine.class)) {
+        if (TileEntityProgressMachine.class.isAssignableFrom(clazz)) {
             var field = TileEntityProgressMachine.class.getDeclaredField("baseTicksRequired");
             field.setAccessible(true);
             baseTick = field.getInt(this);
         }
-        if (clazz.isAssignableFrom(TileEntityFactory.class)) {
+        if (TileEntityFactory.class.isAssignableFrom(clazz)) {
             var field = TileEntityFactory.class.getDeclaredField("BASE_TICKS_REQUIRED");
             field.setAccessible(true);
             baseTick = field.getInt(this);
